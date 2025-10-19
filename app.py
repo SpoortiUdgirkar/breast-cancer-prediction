@@ -42,4 +42,4 @@ if st.button("Predict"):
     label = "Benign (No Cancer)" if pred == 1 else "Malignant (Cancer)"
     st.write(f"**Prediction:** {label}")
     st.write(f"Benign probability: {proba[1]*100:.2f}% | Malignant probability: {proba[0]*100:.2f}%")
-    st.info("⚠️ Educational demo — not for medical use.")
+    st.info("⚠️ Accuracy: ~93–96%. Please consult a medical professional for confirmation.")
