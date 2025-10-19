@@ -8,7 +8,7 @@ import numpy as np
 
 st.set_page_config(page_title="Breast Cancer (6-feature) Prediction", layout="centered")
 
-st.title("🩺 Breast Cancer Prediction — Top 6 Features")
+st.title("🩺 Breast Cancer Prediction ")
 st.write("This app uses 6 important features to predict benign vs malignant (educational demo).")
 
 MODEL_PATH = "rf_model_top6.joblib"
