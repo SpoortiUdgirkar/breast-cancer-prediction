@@ -25,9 +25,11 @@ st.sidebar.header("Enter feature values (6 features)")
 inputs = []
 default_vals = [15.0, 0.05, 0.05, 95.0, 600.0, 0.05]
 
-for i, feat in enumerate(feature_names):
-    val = st.sidebar.number_input(feat, value=float(default_vals[i]), format="%.4f", step=0.1)
+inputs = []
+for feature in feature_names:
+    val = st.number_input(f"Enter value for {feature}:", min_value=0.0, max_value=1000.0, step=0.01)
     inputs.append(val)
+
 
 st.subheader("Input values")
 input_df = pd.DataFrame([inputs], columns=feature_names)
