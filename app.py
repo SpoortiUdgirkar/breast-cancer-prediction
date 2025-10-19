@@ -1,4 +1,4 @@
-%%writefile app.py
+#%%writefile app.py
 # app.py (6-feature version)
 import streamlit as st
 import pandas as pd
